@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,NavLink} from "react-router-dom";
 import Login from "./Login";
+import Register from "./Register";
 
 const LandingPage = (props) => {
   return (
@@ -32,11 +33,22 @@ const LandingPage = (props) => {
                 </Link>
               </button>
             </div>
+            <div>
+              <button
+                type="button"
+                className="my-custom-button" style={{ margin: '10px'}}
+              >
+                <Link to="createElection" className=" linki">
+                  Create
+                </Link>
+              </button>
+            </div>
             </div>
       
             
           </>
-        ) : null}
+        ) :null}
+        
       </div>
     </div>
   );
